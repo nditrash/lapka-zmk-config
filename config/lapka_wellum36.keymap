@@ -68,8 +68,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
+            if-layers = <4 4>;
+            then-layer = <4>;
         };
     };
 };
@@ -83,46 +83,55 @@
 
         def_layer {
             bindings = <
-&kp Q        &kp W             &kp E   &kp R               &kp T           &kp Y            &kp U          &kp I      &kp O                &kp P
-&kp A        &kp S             &kp D   &kp F               &kp G           &kp H            &kp J          &kp K      &kp L                &kp SEMICOLON
-&mt LCTRL Z  &mt LEFT_SHIFT X  &kp C   &kp V               &mt LEFT_ALT B  &mt RIGHT_ALT N  &kp M          &kp COMMA  &mt RIGHT_SHIFT DOT  &mt RCTRL SLASH
-                               &trans  &mt LEFT_WIN SPACE  &mo 3           &mo 1            &kp BACKSPACE  &trans
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-&kp N1         &kp N2         &kp N3        &kp N4         &kp N5        &kp N6      &kp N7         &kp N8        &kp N9      &kp N0
-&to 2          &kp DOT        &kp COMMA     &kp LS(QMARK)  &kp FSLH      &kp APOS    &kp LS(LPAR)   &kp LS(LBRC)  &kp LBKT    &to 2
-&kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AT)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LT)  &kp LS(GT)
-                              &trans        &kp SPACE      &trans        &trans      &kp BACKSPACE  &trans
-            >;
-        };
-
-        alt_sym_layer {
-            bindings = <
-&kp N1        &kp N2         &kp N3     &kp N4         &kp N5         &kp N6       &kp N7         &kp N8        &kp N9      &kp N0
-&kp LS(PIPE)  &kp LS(COLON)  &kp SEMI   &kp LS(EXCL)   &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)   &kp LS(RBRC)  &kp RBKT    &kp LS(CARET)
-&kp GRAVE     &kp LS(UNDER)  &kp EQUAL  &kp LS(POUND)  &kp LS(PRCNT)  &kp LS(AT)   &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LT)  &kp LS(GT)
-                             &trans     &kp SPACE      &trans         &trans       &kp BACKSPACE  &trans
+&kp Q        &kp W             &kp E      &kp R  &kp T           &kp Y            &kp U  &kp I          &kp O                &kp P
+&kp A        &kp S             &kp D      &kp F  &mt LEFT_WIN G  &kp H            &kp J  &kp K          &kp L                &kp SEMICOLON
+&mt LCTRL Z  &mt LEFT_SHIFT X  &kp C      &kp V  &mt LEFT_ALT B  &mt RIGHT_ALT N  &kp M  &kp COMMA      &mt RIGHT_SHIFT DOT  &mt RCTRL SLASH
+                               &kp SPACE  &mo 1  &mo 2           &mo 3            &mo 4  &kp BACKSPACE
             >;
         };
 
         nav_layer {
             bindings = <
-&kp LG(Q)   &kp LG(MINUS)  &kp LG(EQUAL)  &kp LG(R)  &kp LC(LS(TAB))   &kp RC(TAB)  &kp C_PREVIOUS  &kp C_NEXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN
-&kp ESCAPE  &kp LG(H)      &kp LG(K)      &kp LG(L)  &kp ENTER         &kp ENTER    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &kp PG_UP
-&kp LCTRL   &kp LSHIFT     &kp LG(J)      &kp LG(C)  &kp C_PLAY_PAUSE  &kp C_MUTE   &kp HOME        &kp DOWN_ARROW  &kp END            &kp PAGE_DOWN
-                           &trans         &kp SPACE  &trans            &kp TAB      &kp BACKSPACE   &trans
+&kp LG(Q)   &kp LG(MINUS)  &kp LG(EQUAL)  &kp LG(R)   &kp LC(LS(TAB))   &kp RC(TAB)  &kp C_PREVIOUS  &kp C_NEXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN
+&kp ESCAPE  &kp LG(H)      &kp LG(K)      &kp LG(L)   &kp ENTER         &kp ENTER    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &kp PG_UP
+&kp LCTRL   &kp LSHIFT     &kp LG(J)      &kp LG(C)   &kp C_PLAY_PAUSE  &kp C_MUTE   &kp HOME        &kp DOWN_ARROW  &kp END            &kp PAGE_DOWN
+                           &kp SPACE      &kp DELETE  &trans            &kp TAB      &trans          &kp BACKSPACE
             >;
         };
 
         fn_layer {
             bindings = <
-&kp F13  &kp F14  &kp F15  &kp F16  &trans  &trans  &kp F17  &kp F18  &kp F19  &kp F20
-&kp F1   &kp F2   &kp F3   &kp F4   &trans  &trans  &kp F7   &kp F8   &kp F9   &kp F10
-&trans   &trans   &kp F5   &kp F6   &trans  &trans  &kp F11  &kp F12  &trans   &trans
-                  &trans   &trans   &trans  &trans  &trans   &trans
+&kp F13       &kp F14  &kp F15  &kp F16  &kp F17  &trans  &trans   &trans   &trans  &trans
+&kp F1        &kp F2   &kp F3   &kp F4   &kp F18  &trans  &kp F7   &kp F8   &kp F9  &kp F10
+&kp LEFT_ALT  &kp F20  &kp F5   &kp F6   &kp F19  &trans  &kp F11  &kp F12  &trans  &trans
+                       &trans   &trans   &trans   &trans  &trans   &trans
+            >;
+        };
+
+        alt_layaer {
+            bindings = <
+&kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)   &kp LA(T)  &kp LA(Y)  &kp LA(U)  &kp LA(I)      &kp LA(O)       &kp LA(P)
+&kp LA(A)  &kp LA(S)  &kp LA(D)  &kp LA(F)   &kp LG(G)  &kp LA(H)  &kp LA(J)  &kp LA(K)      &kp LA(L)       &kp LA(SEMI)
+&kp LA(Z)  &kp LA(X)  &kp LA(C)  &kp LA(V)   &kp LA(B)  &kp LA(N)  &kp LA(M)  &kp LA(COMMA)  &kp LA(PERIOD)  &kp LA(FSLH)
+                      &kp SPACE  &kp DELETE  &trans     &trans     &trans     &kp BACKSPACE
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+&kp N1         &kp N2         &kp N3        &kp N4         &kp N5        &kp N6      &kp N7        &kp N8         &kp N9      &kp N0
+&to 5          &kp DOT        &kp COMMA     &kp LS(QMARK)  &kp FSLH      &kp APOS    &kp LS(LPAR)  &kp LS(LBRC)   &kp LBKT    &to 5
+&kp LS(TILDE)  &kp LS(UNDER)  &kp LS(PLUS)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AT)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LT)  &kp LS(GT)
+                              &kp SPACE     &kp DELETE     &trans        &trans      &trans        &kp BACKSPACE
+            >;
+        };
+
+        alt_sym_layer {
+            bindings = <
+&kp N1        &kp N2         &kp N3     &kp N4         &kp N5         &kp N6       &kp N7        &kp N8         &kp N9      &kp N0
+&kp LS(PIPE)  &kp LS(COLON)  &kp SEMI   &kp LS(EXCL)   &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)   &kp RBKT    &kp LS(CARET)
+&kp GRAVE     &kp LS(UNDER)  &kp EQUAL  &kp LS(POUND)  &kp LS(PRCNT)  &kp LS(AT)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LT)  &kp LS(GT)
+                             &kp SPACE  &kp DELETE     &trans         &trans       &trans        &kp BACKSPACE
             >;
         };
     };
