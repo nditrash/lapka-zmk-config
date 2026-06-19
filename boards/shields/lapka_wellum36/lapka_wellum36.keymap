@@ -53,10 +53,10 @@
 
         fn_layer {
             bindings = <
-&kp F13       &kp F14  &kp F15  &kp F16  &kp F17  &trans  &trans   &trans   &trans  &trans
-&kp F1        &kp F2   &kp F3   &kp F4   &kp F18  &trans  &kp F7   &kp F8   &kp F9  &kp F10
-&kp LEFT_ALT  &kp F20  &kp F5   &kp F6   &kp F19  &trans  &kp F11  &kp F12  &trans  &trans
-                       &trans   &trans   &trans   &trans  &trans   &trans
+&kp F13   &kp F14  &kp F15  &kp F16  &kp F17  &trans  &trans   &trans   &trans   &trans
+&kp LALT  &kp F1   &kp F2   &kp F3   &kp F18  &trans  &kp F7   &kp F8   &kp F9   &trans
+&kp F20   &kp F4   &kp F5   &kp F6   &kp F19  &trans  &kp F10  &kp F11  &kp F12  &trans
+                   &trans   &trans   &trans   &trans  &trans   &trans
             >;
         };
 
@@ -80,10 +80,10 @@
 
         alt_sym_layer {
             bindings = <
-&kp N1        &kp N2         &kp N3     &kp N4         &kp N5         &kp N6       &kp N7        &kp N8         &kp N9      &kp N0
-&kp LS(PIPE)  &kp LS(COLON)  &kp SEMI   &kp LS(EXCL)   &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)   &kp RBKT    &kp LS(CARET)
-&kp GRAVE     &kp LS(UNDER)  &kp EQUAL  &kp LS(POUND)  &kp LS(PRCNT)  &kp LS(AT)   &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LT)  &kp LS(GT)
-                             &kp SPACE  &kp DELETE     &trans         &trans       &trans        &kp BACKSPACE
+&kp N1     &kp N2         &kp N3     &kp N4        &kp N5         &kp N6       &kp N7        &kp N8         &kp N9      &kp N0
+&trans     &kp LS(COLON)  &kp SEMI   &kp LS(EXCL)  &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)   &kp RBKT    &trans
+&kp GRAVE  &kp LS(UNDER)  &kp EQUAL  &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)   &kp LS(LT)  &kp LS(GT)
+                          &kp SPACE  &kp DELETE    &trans         &trans       &trans        &kp BACKSPACE
             >;
         };
     };
