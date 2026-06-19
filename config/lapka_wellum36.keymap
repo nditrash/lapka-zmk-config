@@ -9,14 +9,24 @@
     combos {
         compatible = "zmk,combos";
 
-        rus {
+        rus_left {
             bindings = <&kp LS(LG(NUMBER_1))>;
             key-positions = <21 22>;
         };
 
-        eng {
+        eng_left {
             bindings = <&kp LG(LS(NUMBER_2))>;
             key-positions = <23 22>;
+        };
+
+        rus_right {
+            bindings = <&kp LS(LG(NUMBER_1))>;
+            key-positions = <27 28>;
+        };
+
+        eng_right {
+            bindings = <&kp LG(LS(NUMBER_2))>;
+            key-positions = <26 27>;
         };
     };
 
