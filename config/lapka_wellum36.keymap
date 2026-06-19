@@ -6,6 +6,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        rus {
+            bindings = <&kp LS(LG(NUMBER_1))>;
+            key-positions = <21 22>;
+        };
+
+        eng {
+            bindings = <&kp LG(LS(NUMBER_2))>;
+            key-positions = <23 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
