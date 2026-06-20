@@ -60,7 +60,7 @@
             >;
         };
 
-        ralt_layaer {
+        ralt_layer {
             bindings = <
 &kp RA(Q)  &kp RA(W)  &kp RA(E)  &kp RA(R)   &kp RA(T)  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)       &kp RA(P)
 &kp RA(A)  &kp RA(S)  &kp RA(D)  &kp RA(F)   &kp RA(G)  &kp RA(H)  &kp RA(J)  &kp RA(K)      &kp RA(L)       &kp RA(SEMI)
