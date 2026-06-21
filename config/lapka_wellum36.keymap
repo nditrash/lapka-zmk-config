@@ -72,8 +72,8 @@
         sym_layer {
             bindings = <
 &kp N1         &kp N2     &kp N3        &kp N4         &kp N5        &kp N6      &kp N7        &kp N8        &kp N9      &kp N0
-&mo 5          &ra_dot    &ra_comma     &ra_ls_qmark   &ra_slash     &kp APOS    &kp LS(LPAR)  &kp LS(LBRC)  &kp LBKT    &mo 5
-&kp LS(TILDE)  &kp MINUS  &kp LS(PLUS)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AT)  &kp LS(AMPS)  &kp LS(STAR)  &ra_ls_lt   &ra_ls_gt
+&mo 5          &kp RA(DOT)    &kp RA(COMMA)     &kp RA(LS(FSLH))   &kp RA(FSLH)     &kp APOS    &kp LS(LPAR)  &kp LS(LBRC)  &kp LBKT    &mo 5
+&kp LS(TILDE)  &kp MINUS  &kp LS(PLUS)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(AT)  &kp LS(AMPS)  &kp LS(STAR)  &kp RA(LS(COMMA))   &kp RA(LS(DOT))
                           &kp SPACE     &kp DELETE     &trans        &trans      &trans        &trans
             >;
         };
@@ -81,8 +81,8 @@
         alt_sym_layer {
             bindings = <
 &kp N1     &kp N2         &kp N3     &kp N4        &kp N5         &kp N6       &kp N7        &kp N8        &kp N9      &kp N0
-&trans     &ra_ls_colon   &ra_semi   &kp LS(EXCL)  &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT    &trans
-&kp GRAVE  &kp LS(UNDER)  &kp EQUAL  &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)  &ra_ls_lt   &ra_ls_gt
+&trans     &kp RA(LS(SEMI))   &kp RA(SEMI)   &kp LS(EXCL)  &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT    &trans
+&kp GRAVE  &kp LS(UNDER)  &kp EQUAL  &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)  &kp RA(LS(COMMA))   &kp RA(LS(DOT))
                           &kp SPACE  &kp DELETE    &trans         &trans       &trans        &trans
             >;
         };
