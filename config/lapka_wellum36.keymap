@@ -4,6 +4,11 @@
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
+    &mt {
+        tapping-term-ms = <180>;
+        flavor = "tap-preferred";
+    };
+
     combos {
         compatible = "zmk,combos";
 
