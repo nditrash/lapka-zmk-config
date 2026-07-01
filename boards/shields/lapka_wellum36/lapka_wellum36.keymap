@@ -5,8 +5,8 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     &mt {
-        tapping-term-ms = <180>;   // удерживать дольше 180 мс → модификатор
-        flavor = "tap-preferred";  // по умолчанию — обычная клавиша
+        tapping-term-ms = <180>;
+        flavor = "tap-preferred";
     };
 
     combos {
