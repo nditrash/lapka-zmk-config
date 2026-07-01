@@ -4,14 +4,6 @@
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    // Переопределяем глобальное поведение mt (mod-tap)
-    &mt {
-        flavor = "tap-preferred";          // приоритет тапа при быстром наборе
-        tapping-term-ms = <120>;           // время тапа (мс)
-        quick-tap-ms = <100>;              // быстрый повторный тап
-        require-prior-idle-ms = <150>;     // пауза перед удержанием
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -93,4 +85,11 @@
             >;
         };
     };
+};
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <100>;
+    require-prior-idle-ms = <150>;
 };
