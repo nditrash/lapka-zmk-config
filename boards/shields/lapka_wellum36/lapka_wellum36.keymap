@@ -26,16 +26,6 @@
             bindings = <&kp LG(LS(NUMBER_2))>;
             key-positions = <26 27>;
         };
-
-        sleep_left {
-            bindings = <&soft_off>;
-            key-positions = <10 12 14>; /* A, D, G */
-        };
-
-        sleep_right {
-            bindings = <&soft_off>;
-            key-positions = <15 17 19>; /* H, K, SEMICOLON */
-        };
     };
 
     keymap {
