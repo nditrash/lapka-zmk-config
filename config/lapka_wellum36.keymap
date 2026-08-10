@@ -60,10 +60,10 @@
 
         ralt_layer {
             bindings = <
-&kp RA(Q)  &kp RA(W)  &kp RA(E)  &kp RA(R)   &kp RA(T)  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)       &kp RA(P)
-&kp RA(A)  &kp RA(S)  &kp RA(D)  &kp RA(F)   &kp RA(G)  &kp RA(H)  &kp RA(J)  &kp RA(K)      &kp RA(L)       &kp RA(SEMI)
-&kp RA(Z)  &kp RA(X)  &kp RA(C)  &kp RA(V)   &kp RA(B)  &kp RA(N)  &kp RA(M)  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(FSLH)
-                      &kp SPACE  &kp DELETE  &trans     &trans     &trans     &trans
+&kp RA(Q)  &kp RA(W)  &kp RA(E)  &kp RA(R)  &kp RA(T)  &kp RA(Y)  &kp RA(U)  &kp RA(I)      &kp RA(O)       &kp RA(P)
+&kp RA(A)  &kp RA(S)  &kp RA(D)  &kp RA(F)  &kp RA(G)  &kp RA(H)  &kp RA(J)  &kp RA(K)      &kp RA(L)       &kp RA(SEMI)
+&kp RA(Z)  &kp RA(X)  &kp RA(C)  &kp RA(V)  &kp RA(B)  &kp RA(N)  &kp RA(M)  &kp RA(COMMA)  &kp RA(PERIOD)  &kp RA(FSLH)
+                      &kp DEL    &kp SPACE  &trans     &trans     &trans     &trans
             >;
         };
 
@@ -72,7 +72,7 @@
 &kp N1         &kp N2       &kp N3         &kp N4            &kp N5        &kp N6      &kp N7        &kp N8        &kp N9             &kp N0
 &mo 5          &kp RA(DOT)  &kp RA(COMMA)  &kp RA(LS(FSLH))  &kp RA(FSLH)  &kp APOS    &kp LS(LPAR)  &kp LS(LBRC)  &kp LBKT           &mo 5
 &kp LS(TILDE)  &kp MINUS    &kp LS(PLUS)   &kp LS(POUND)     &kp LS(DLLR)  &kp LS(AT)  &kp LS(AMPS)  &kp LS(STAR)  &kp RA(LS(COMMA))  &kp RA(LS(DOT))
-                            &kp SPACE      &kp DELETE        &trans        &trans      &trans        &trans
+                            &kp DEL        &kp SPACE         &trans        &trans      &trans        &trans
             >;
         };
 
@@ -81,7 +81,7 @@
 &kp N1     &kp N2            &kp N3        &kp N4        &kp N5         &kp N6       &kp N7        &kp N8        &kp N9             &kp N0
 &trans     &kp RA(LS(SEMI))  &kp RA(SEMI)  &kp LS(EXCL)  &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT           &trans
 &kp GRAVE  &kp LS(UNDER)     &kp EQUAL     &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)  &kp RA(LS(COMMA))  &kp RA(LS(DOT))
-                             &kp SPACE     &kp DELETE    &trans         &trans       &trans        &trans
+                             &kp DEL       &kp SPACE     &trans         &trans       &trans        &trans
             >;
         };
     };
