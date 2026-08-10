@@ -80,7 +80,7 @@
             bindings = <
 &kp N1     &kp N2            &kp N3        &kp N4        &kp N5         &kp N6       &kp N7        &kp N8        &kp N9             &kp N0
 &trans     &kp RA(LS(SEMI))  &kp RA(SEMI)  &kp LS(EXCL)  &kp BSLH       &kp LS(DQT)  &kp LS(RPAR)  &kp LS(RBRC)  &kp RBKT           &trans
-&kp GRAVE  &kp LS(UNDER)     &kp EQUAL     &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)  &kp RA(LS(COMMA))  &kp RA(LS(DOT))
+&kp TILDE  &kp LS(UNDER)     &kp EQUAL     &kp PIPE      &kp LS(PRCNT)  &kp LS(AT)   &kp CARET     &kp LS(STAR)  &kp RA(LS(COMMA))  &kp RA(LS(DOT))
                              &kp DEL       &kp SPACE     &trans         &trans       &trans        &trans
             >;
         };
